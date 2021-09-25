@@ -1,19 +1,15 @@
-import { div } from 'prelude-ls';
-import React ,{Component, Fragment} from 'react'
-import './App.css';
+import React  from 'react'
+import Cart from "./components/Cart";
 
 
 
-class App extends Component{
-  render(){
-    return(
-      <div className="App">
-        
-      
-      </div>
-
-    );
-  }
+const App = () => {
+  return (
+    <>
+      <Cart/>
+    </>
+  )
 }
 
-export default App;
+export default App
+

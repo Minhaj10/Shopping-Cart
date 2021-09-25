@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap");
+
+.nav-bar {
+    display: flex;
+    height: inherit;
+    align-items: center;
+  }
+ 
+  .nav-bar .nav-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .nav-bar img{
+    margin-left:2rem;
+  }
+
+  .nav-icon {
+    display: flex;
+    text-align: end;
+    margin-right: 2rem;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  .nav-bar h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--main-color);
+    margin-left: 1.5rem;
+    font-weight: 400;
+  }
+
+  .cart-icon {
+    display: flex;
+    text-align: end;
+    margin-right: 2rem;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  .cart-icon img {
+    width: 2.2rem;
+    height: 2.2rem;
+    color: #2f80ed;
+    margin-left: 60rem;
+  }
+
+  .cart-icon p {
+    position: absolute;
+    width: 2.2rem;
+    height: 2.2rem;
+    right: -1.2rem;
+    top: 0.9rem;
+    border-radius: 50%;
+    background: #99cbf7;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+  }
+
+  .main-menu h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: rgba(41, 41, 41, 1);
+    margin-bottom: 1rem;
+  }
+  .main-menu p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: var(--main-color);
+    margin-bottom: 5rem;
+  }
+
+  .cart-item-counter {
+    font-weight: bold;
+    color: var(--main-color);
+  }
