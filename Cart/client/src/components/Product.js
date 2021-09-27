@@ -1,6 +1,9 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import {CartContext} from './Cart'
 
 const Product = (props) => {
+
+  const { removeitem } = useContext(CartContext)
     return (
        <>
                 
@@ -21,7 +24,7 @@ const Product = (props) => {
                               </div>
 
                               <div className="delete">
-                              <i className="fas fa-trash-alt delete"></i>
+                              <i className="fas fa-trash-alt delete" onClick={()=> removeitem(props.id)}></i>
                          </div>
                 </div>
                 <hr/>
