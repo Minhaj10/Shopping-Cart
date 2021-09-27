@@ -45,8 +45,10 @@ const decrement=(id)=>{
 };
 
 useEffect(() => {
-    dispatch({type: "GET_TOTAL"});
+    dispatch({type: "GET_TOTAL_ITEM"});
 }, [state.item])
+
+
 
     return (
         <>

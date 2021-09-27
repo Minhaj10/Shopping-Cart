@@ -22,7 +22,7 @@ const Product = (props) => {
                                 <i className="fas fa-plus add" onClick={()=> increment(props.id)}></i>
                               </div>
                               <div className="price">
-                            <h3>{props.price}</h3>
+                            <h3>{props.price} Taka</h3>
                               </div>
 
                               <div className="delete">
