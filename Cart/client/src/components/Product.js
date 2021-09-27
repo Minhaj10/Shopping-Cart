@@ -4,6 +4,8 @@ import {CartContext} from './Cart'
 const Product = (props) => {
 
   const { removeitem } = useContext(CartContext)
+
+  
     return (
        <>
                 

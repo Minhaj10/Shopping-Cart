@@ -276,3 +276,11 @@
   .card-total button:hover {
     background-color: #0077dc;
   }
+
+  .card-total .clear-cart {
+    margin-left: 3rem;
+    background-color: rgb(209, 61, 61);
+  }
+  .card-total .clear-cart:hover {
+    background-color: rgb(197, 5, 5);
+  }
