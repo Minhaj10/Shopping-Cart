@@ -1,4 +1,4 @@
-import React,{useState,createContext,useReducer} from 'react'
+import React,{useState,createContext,useReducer, useEffect} from 'react'
 import './cart.css'
 import {Products} from './data'
 import Itemscontext from './Itemscontext'
@@ -43,6 +43,10 @@ const decrement=(id)=>{
         payload: id,
     });
 };
+
+useEffect(() => {
+    dispatch({type: "GET_TOTAL"});
+}, [state.item])
 
     return (
         <>

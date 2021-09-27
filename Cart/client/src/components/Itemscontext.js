@@ -6,7 +6,7 @@ import {CartContext} from './Cart'
 const Itemscontext = () => {
     
 
-     const {item,clearcart} = useContext(CartContext)
+     const {item,clearcart,totalitem} = useContext(CartContext)
 
      if(item.length===0){
          return(
@@ -17,7 +17,7 @@ const Itemscontext = () => {
                      <h2>Shopping Cart</h2>
                     <div className="cart-icon">
                         <img src="./Images/self-collect.png" alt="collection-icon"/>
-                        <p>0</p>
+                        <p>{totalitem}</p>
                     </div>
                 </div >
                
@@ -27,7 +27,7 @@ const Itemscontext = () => {
                     The list of items
                 </h3>
                 <p>
-                    You got <span className="cart-item-counter">0</span> items in your cart
+                    You got <span className="cart-item-counter">{totalitem}</span> items in your cart
                 </p>
                 <div className="menu-items">
                     <div className="scroll-portion">
@@ -60,7 +60,7 @@ const Itemscontext = () => {
                      <h2>Shopping Cart</h2>
                     <div className="cart-icon">
                         <img src="./Images/self-collect.png" alt="collection-icon"/>
-                        <p>7</p>
+                        <p>{totalitem}</p>
                     </div>
                 </div >
                
@@ -70,7 +70,7 @@ const Itemscontext = () => {
                     The list of items
                 </h3>
                 <p>
-                    You got <span className="cart-item-counter">7</span> items in your cart
+                    You got <span className="cart-item-counter">{totalitem}</span> items in your cart
                 </p>
                 <div className="menu-items">
                     <div className="scroll-portion">
