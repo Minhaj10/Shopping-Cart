@@ -44,9 +44,9 @@
   }
 
   .cart-icon img {
-    width: 2.2rem;
-    height: 2.2rem;
-    color: #2f80ed;
+    width: 4.2rem;
+    height: 4.2rem;
+    color: #161718;
     margin-left: 60rem;
   }
 
@@ -57,8 +57,9 @@
     right: -1.2rem;
     top: 0.9rem;
     border-radius: 50%;
-    background: #99cbf7;
-    color: #fff;
+    background: #f1f1f3;
+    text-decoration-color: #161718;
+    color: rgb(119, 23, 23);
     box-sizing: border-box;
     font-size: 1.5rem;
     display: flex;
@@ -96,12 +97,12 @@
   /*middle portion start */
 
   .main-menu .menu-items{
-  width: 90%;
-  height: 30rem;
+  width: 80%;
+  height: 40rem;
   background: linear-gradient(
     103.49deg,
-    #95b5b9 -28.13%,
-    rgba(21, 22, 24, 0.5) 116.84%
+    #d7eef1 -28.13%,
+    rgba(195, 198, 204, 0.5) 116.84%
   );
   box-shadow: rgba(92, 94, 97, 0.08) 0rem 0.4rem 1.2rem;
   border-radius: 2rem;
@@ -116,9 +117,9 @@
     
   }
   .scroll-portion{
-      width: 90%;
+      width: 100%;
       height: 50rem;
-      
+      margin-left: 30px;
      
   }
   .each-item{
@@ -148,7 +149,7 @@
   .each-item .product-title h2 {
     font-style: normal;
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     display: flex;
     margin-bottom:0px;
     align-items: center;
@@ -213,7 +214,7 @@
   .price h3 {
     font-style: normal;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
     color: var(--main-color);
   }
@@ -226,11 +227,19 @@
   }
   .delete button {
     border: none;
+    color: rgb(170, 23, 23);
     background-color: transparent;
+  }
+
+  .fa-trash-alt{
+    color: rgb(241, 3, 3);
+  }
+  .card-total h3{
+    font-size: 1.5;
   }
   .card-total button {
     border: none;
-    font-size: 1.6rem;
+    font-size: 0.8rem;
     padding: 1rem 3rem;
     color: #fff;
     background-color: #349bf3;
@@ -283,4 +292,15 @@
   }
   .card-total .clear-cart:hover {
     background-color: rgb(197, 5, 5);
+  }
+
+.fa-minus {
+    margin-right: 10px;
+    margin-left: 30px;
+
+  }
+  .fa-plus {
+    
+    margin-left: 10px;
+
   }
