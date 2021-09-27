@@ -14,5 +14,26 @@ export const reducer = (state,action)=>{
          item:[]
       };
    }
+
+   if(action.type==="INCREMENT"){
+      let updatedcart= state.item.map((curElem)=>{
+         if(curElem.id===action.payload){
+            return {...curElem,quantity:curElem.quantity+1};
+         }
+         return curElem; 
+      });
+      return {...state,item:updatedcart}
+   }
+   
+   if(action.type==="DECREMENT"){
+      let updatedcart= state.item.map((curElem)=>{
+         if(curElem.id===action.payload){
+            return {...curElem,quantity:curElem.quantity-1};
+         }
+         return curElem; 
+      });
+      return {...state,item:updatedcart}
+   }
+
    return state
 };
