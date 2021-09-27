@@ -27,7 +27,7 @@ export const reducer = (state,action)=>{
    
    if(action.type==="DECREMENT"){
       let updatedcart= state.item.map((curElem)=>{
-         if(curElem.id===action.payload){
+         if(curElem.id===action.payload && curElem.quantity!=0){
             return {...curElem,quantity:curElem.quantity-1};
          }
          return curElem; 
