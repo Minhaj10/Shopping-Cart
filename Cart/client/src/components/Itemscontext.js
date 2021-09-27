@@ -2,11 +2,17 @@ import React,{useContext} from 'react'
 import {Products} from './data'
 import Product from './Product'
 import {CartContext} from './Cart'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const Itemscontext = () => {
     
-
+     toast.configure();
      const {item,clearcart,totalitem,totalammount} = useContext(CartContext)
+     const notify = () => toast.success("Payment successfully!",{position: toast.POSITION.BOTTOM_LEFT})
+
 
      if(item.length===0){
          return(
@@ -43,7 +49,7 @@ const Itemscontext = () => {
                 
                 <div className="card-total">
                      <h3>Cart Total : <span>{totalammount} Taka</span></h3>
-                     <button>Checkout</button>
+                     <button  onClick={notify}>Checkout</button>
                      <button className="clear-cart" onClick={clearcart}> Clear All </button>
                 </div>
         
@@ -86,7 +92,7 @@ const Itemscontext = () => {
                 
                 <div className="card-total">
                      <h3>Cart Total : <span>{totalammount} Taka</span></h3>
-                     <button>Checkout</button>
+                     <button onClick={notify}>Checkout</button>
                      <button className="clear-cart" onClick={clearcart}> Clear All </button>
                 </div>
         

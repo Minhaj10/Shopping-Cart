@@ -26,7 +26,8 @@ const Cart = () => {
 
    const clearcart =()=>{
        return dispatch({
-           type:"CLEAR_CART"
+           type:"CLEAR_CART",
+        
        });
    };
 
