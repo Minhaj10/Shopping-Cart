@@ -3,6 +3,7 @@ import "./cart.css";
 import { Products } from "./data";
 import Itemscontext from "./Itemscontext";
 import { reducer } from "./reducer";
+import axios from "axios";
 
 //creating a context for passing data to all component
 export const CartContext = createContext();

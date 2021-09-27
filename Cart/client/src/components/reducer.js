@@ -11,7 +11,7 @@ export const reducer = (state, action) => {
 
     // action call from clear button will work here
     // by making item array null it deletes all the element from component
-    if (action.type == "CLEAR_CART") {
+    if (action.type === "CLEAR_CART") {
         return {
             ...state,
             item: [],
